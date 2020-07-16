@@ -466,8 +466,9 @@ template {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-image: url(../img/user-avatar.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .user__name {
