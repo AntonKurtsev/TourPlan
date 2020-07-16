@@ -500,7 +500,7 @@ template {
 
 .menu-btn__line {
   display: block;
-  width: 100%;
+  width: 16px;
   height: 1px;
   background-color: #333333;
 }
