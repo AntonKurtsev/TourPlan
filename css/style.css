@@ -540,6 +540,12 @@ template {
   .container {
     max-width: 606px;
   }
+  .navbar:first-of-type {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
