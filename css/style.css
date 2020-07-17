@@ -7,6 +7,7 @@ body {
   font-family: 'Muli', sans-serif;
   margin: 0;
   color: #333333;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -561,4 +562,32 @@ template {
   .logo {
     width: 99px;
   }
+}
+
+.breadcrumbs {
+  padding: 18px 0;
+}
+
+.breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumbs__link::after {
+  content: "/";
+  margin: 0 3px;
 }
