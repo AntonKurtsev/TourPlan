@@ -556,6 +556,9 @@ template {
     display: -ms-flexbox;
     display: flex;
   }
+  .breadcrumbs--responsive {
+    margin-top: 70px;
+  }
 }
 
 @media (max-width: 576px) {
