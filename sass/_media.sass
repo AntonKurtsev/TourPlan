@@ -36,6 +36,27 @@
   .breadcrumbs
     &--responsive
       margin-top: 70px
+  .hotel
+    &-info
+      padding: 5px 0 20px
+    &-descr
+      max-width: 280px
+      &__main
+        justify-content: space-between
+      &__stars
+        flex-basis: auto
+        margin-right: 10px
+      &__offer
+        order: -1
+      &__name
+        flex-basis: 100%
+        margin-right: 0
+        margin-top: 10px
 @media (max-width: 576px)
+  .container
+    max-width: 310px
   .logo
     width: 99px
+  .hotel
+    &-rating
+      display: none
