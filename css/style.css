@@ -966,12 +966,9 @@ template {
   }
   .hotel-grid__booking {
     width: 265px;
-    min-height: 160px;
-    height: 200px;
   }
   .hotel-grid__map {
     width: 265px;
-    min-height: 160px;
   }
   .swiper-container {
     height: 350px;
