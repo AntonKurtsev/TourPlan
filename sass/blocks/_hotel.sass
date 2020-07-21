@@ -52,6 +52,13 @@
       &--small
         font-size: 10px
         line-height: 13px
+  &-grid
+    display: flex
+    justify-content: space-between
+    &__info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
 .swiper
   &-container
     width: 100%
@@ -96,5 +103,80 @@
     &--next
       right: 16px
       background-image: url(../img/arrow-next.svg)
-
-
+.booking
+  min-height: 210px
+  width: 350px
+  padding: 27px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  background-color: $dark
+  color: $light
+  font-family: 'Nunito', sans-serif
+  border-radius: 8px
+  &__terms
+    display: flex
+    justify-content: space-between
+  &__button
+    width: 100%
+    min-height: 45px
+    background-color: $primary
+    color: $light
+    border: none
+    outline: none
+    border-radius: 4px
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    cursor: pointer
+.price
+  display: flex
+  flex-direction: column
+  &__starts
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__person-room
+    margin-top: 4px
+.person-room
+  &__guest
+    margin-bottom: 8px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__room
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__icon
+    margin-right: 9px
+  &__text
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+.call-center
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-weight: 600
+  font-size: 18px
+  line-height: 25px
+  &__link
+    text-decoration: none
+    color: inherit
+  &__icon
+    margin-right: 8px
+.map
+  max-width: 350px
+  min-height: 213px
+  border-radius: 8px
+  overflow: hidden
+  background-color: #ccc

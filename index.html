@@ -146,6 +146,52 @@
           <!-- /.swiper-container-->
         </div>
         <!-- /.slider -->
+        <div class="hotel-grid__info">
+          <div class="booking hotel-grid__booking">
+            <div class="booking__terms">
+              <div class="price">
+                <span class="price__starts">price starts as</span>
+                <strong class="price__pricetag">$ 8,500</strong>
+                <span class="price__per-room">per room / night</span>
+              </div>
+              <!-- /.price -->
+              <div class="person-room price__person-room">
+                <div class="person-room__guest">
+                  <img src="img/guest.svg" alt="Guest" class="person-room__icon">
+                  <span class="person-room__text">2 x Guests</span>
+                </div>
+                <!-- /.person-room__guest -->
+                <div class="person-room__room">
+                  <img src="img/room.svg" alt="Room" class="person-room__icon">
+                  <span class="person-room__text">1 x Room</span>
+                </div>
+                <!-- /.person-room__room -->
+              </div>
+              <!-- /.person-room -->
+            </div>
+            <!-- /.booking__terms -->
+            <div class="call-center">
+              <span class="call-center__text">Quick Booking</span>
+              <div class="call-center__phone">
+                <a href="tel:12100" class="call-center__link">
+                  <img src="img/phone-call.svg" 
+                  alt="Phone" 
+                  class="call-center__icon">
+                  <span class="call-center__num">12100</span>
+                </a>
+              </div>
+              <!-- /.call-center__phone -->
+            </div>
+            <!-- /.call-center -->
+            <button class="booking__button">View Other Options</button>
+          </div>
+          <!-- /.hotel-grid__booking -->
+          <div class="map hotel-grid__map" id="map">
+          
+          </div>
+          <!-- /.map hotel-grid__map -->
+        </div>
+        <!-- /.hotel-grid__info -->
       </div>
       <!-- /.hotel-grid -->
       
@@ -155,6 +201,8 @@
   <!-- /.hotel -->
   
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=9064086e-e919-43ec-966b-7b10a27ed28b&lang=ru_RU" type="text/javascript">
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>
