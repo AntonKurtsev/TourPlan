@@ -31,20 +31,23 @@ function init () {
 
         // Создаем геообъект с типом геометрии "Точка".
         myGeoObject = new ymaps.GeoObject({
-            // Описание геометрии.
-            geometry: {
-                type: "Point",
-                coordinates: [7.991452, 98.303244]
-            },
-            // Свойства.
-            properties: {
-                // Контент метки.
-                // iconContent: 'islands#blueHotelIcon',
-                // balloonContent: 'Меня можно перемещать',
-            },
-        },);
+          // Описание геометрии.
+          geometry: {
+              type: "Point",
+              coordinates: [7.991452, 98.303244]
+          },
+          // Свойства.
+          properties: {
+              // Контент метки.
+              iconContent: 'Grand Hilton Hotel',
+          }
+      }, {
+          // Опции.
+          // Иконка метки будет растягиваться под размер ее содержимого.
+          preset: 'islands#nightStretchyIcon',
+      });
 
     // Добавляем  метку на карту.
-    myMap.geoObjects
-        .add(myGeoObject);
+  myMap.geoObjects
+    .add(myGeoObject);
 }
