@@ -1,0 +1,93 @@
+.reviews
+  padding: 40px 0 70px
+  &__title
+    margin: 0
+    margin-bottom: 70px
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    color: $text-color
+  &-slider
+    &__item
+      position: relative
+      max-width: 731px
+      margin: 45px auto 0
+      padding: 0 62px 30px
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: #ffffff
+      border-radius: 8px
+      &::before
+        content: ""
+        position: absolute
+        background-image: url(../img/quote-left.svg)
+        width: 70px
+        height: 48px
+        top: 12.8px
+        left: 62px
+      &::after
+        content: ""
+        position: absolute
+        background-image: url(../img/quote-right.svg)
+        width: 70px
+        height: 48px
+        top: 118.7px
+        right: 62px
+    &__button
+      width: 30px
+      height: 30px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      background-color: transparent
+      border: none
+      outline: none
+      cursor: pointer
+      z-index: 10
+      background-size: 10px
+      background-position: center
+      background-repeat: no-repeat
+      &--prev
+        background-image: url(../img/reviews-arrow-prev.svg)
+        left: 0
+      &--next
+        background-image: url(../img/reviews-arrow-next.svg)
+        right: 0
+
+    &__profile
+      margin-top: -45px
+      margin-bottom: 32px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__avatar
+      margin-bottom: 9px
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+    &__username
+      margin: 0
+      margin-bottom: 10px
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+    &__date
+      margin-bottom: 4px
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      color: $text-color
+    &__text
+      margin: 0
+      max-width: 537px
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      color: $text-color
+    
