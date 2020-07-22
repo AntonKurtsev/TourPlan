@@ -70,3 +70,5 @@ function init () {
   myMap.geoObjects
     .add(myGeoObject);
 }
+
+$('.newsletter').parallax({imageSrc: 'img/newsletter-bg.jpg'});

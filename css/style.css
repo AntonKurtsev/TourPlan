@@ -857,7 +857,6 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px;
-  background-image: url(../img/newsletter-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
