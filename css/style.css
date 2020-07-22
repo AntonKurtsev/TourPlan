@@ -932,7 +932,7 @@ template {
   position: absolute;
   top: 0;
   right: 0;
-  width: 65px;
+  max-width: 120px;
   height: 100%;
   background-color: #EC1F46;
   color: #ffffff;
