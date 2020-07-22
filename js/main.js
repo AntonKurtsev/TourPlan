@@ -31,8 +31,8 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     nextEl: '.reviews-slider__button--next',
     prevEl: '.reviews-slider__button--prev',
   },
-  speed: 700,
-  // effect: 'fade',
+  speed: 1000,
+  effect: 'slide',
   grabCursor: true,
   keyboard: {
     enabled: true,
@@ -71,4 +71,8 @@ function init () {
     .add(myGeoObject);
 }
 
-$('.newsletter').parallax({imageSrc: 'img/newsletter-bg.jpg'});
+$('.newsletter').parallax({
+  imageSrc: 'img/newsletter-bg.jpg',
+  speed: 0.6,
+  androidFix: false,
+});
