@@ -39,6 +39,10 @@
   .swiper
     &-container
       height: 400px
+  .newsletter
+    padding: 88px 0 77px
+    &-wrapper
+      max-width: 730px
 @media (max-width: 768px)
   .container
     max-width: 606px
@@ -81,6 +85,16 @@
   .swiper
     &-container
       height: 350px
+  .newsletter
+    padding: 66px 0 77px
+    &-wrapper
+      max-width: 606px
+      flex-direction: column
+      align-items: flex-start
+    &__title
+      margin-bottom: 37px
+  .subscribe
+    width: 100%
 @media (max-width: 576px)
   .container
     max-width: 310px
@@ -98,8 +112,17 @@
         margin-bottom: 20px
       &__map
         width: 100%
-    .slider
-      margin-bottom: 20px
-    .swiper
-      &-container
-        height: 250px
+  .slider
+    margin-bottom: 20px
+  .swiper
+    &-container
+      height: 250px
+  .newsletter
+    &-wrapper
+      max-width: 310px
+    &-title
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-size: 30px
+        line-height: 38px

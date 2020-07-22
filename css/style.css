@@ -853,6 +853,96 @@ template {
   background-color: #ccc;
 }
 
+.newsletter {
+  position: relative;
+  padding: 98px 0 87px;
+  background-image: url(../img/newsletter-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.newsletter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+  z-index: 1;
+}
+
+.newsletter-wrapper {
+  position: relative;
+  max-width: 761px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 5;
+}
+
+.newsletter-title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.newsletter-title__strong {
+  display: block;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  position: relative;
+  width: 350px;
+  height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.subscribe__input {
+  width: 100%;
+  height: 100%;
+  padding: 0 75px 0 33px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  color: #333333;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.subscribe__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 100%;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 990px;
@@ -912,6 +1002,12 @@ template {
   }
   .swiper-container {
     height: 400px;
+  }
+  .newsletter {
+    padding: 88px 0 77px;
+  }
+  .newsletter-wrapper {
+    max-width: 730px;
   }
 }
 
@@ -973,6 +1069,25 @@ template {
   .swiper-container {
     height: 350px;
   }
+  .newsletter {
+    padding: 66px 0 77px;
+  }
+  .newsletter-wrapper {
+    max-width: 606px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
+  }
+  .subscribe {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1001,10 +1116,21 @@ template {
   .hotel-grid__map {
     width: 100%;
   }
-  .hotel .slider {
+  .slider {
     margin-bottom: 20px;
   }
-  .hotel .swiper-container {
+  .swiper-container {
     height: 250px;
+  }
+  .newsletter-wrapper {
+    max-width: 310px;
+  }
+  .newsletter-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
   }
 }
