@@ -1076,6 +1076,93 @@ template {
   color: #333333;
 }
 
+.activities {
+  padding: 60px 0 98px;
+}
+
+.activities__title {
+  margin: 0;
+  margin-bottom: 57px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  padding: 24px 26px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.card__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -3;
+}
+
+.card__title {
+  margin: auto 0 18px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.card__button {
+  padding: 7px 22px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 990px;
@@ -1085,6 +1172,10 @@ template {
   }
   .hotel-slider__item {
     width: 100%;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -1158,6 +1249,20 @@ template {
   }
   .reviews__text {
     max-width: 455px;
+  }
+  .activities {
+    padding-bottom: 70px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card {
+    width: 337px;
+    height: 255px;
+  }
+  .card:nth-child(1), .card:nth-child(2) {
+    margin-bottom: 20px;
   }
 }
 
@@ -1272,6 +1377,10 @@ template {
             transform: translate(50%, -50%);
     margin-right: -75px;
   }
+  .card {
+    width: 48%;
+    height: 210px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1325,5 +1434,19 @@ template {
     margin: 0 auto 40px;
     font-size: 18px;
     line-height: 23px;
+  }
+  .activities {
+    padding: 40px 0 60px;
+  }
+  .activities__title {
+    margin-bottom: 36px;
+    font-size: 18px;
+  }
+  .card {
+    width: 100%;
+    height: 255px;
+  }
+  .card:nth-child(3) {
+    margin-bottom: 20px;
   }
 }

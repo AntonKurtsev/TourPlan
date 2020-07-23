@@ -74,5 +74,5 @@ function init () {
 $('.newsletter').parallax({
   imageSrc: 'img/newsletter-bg.jpg',
   speed: 0.6,
-  androidFix: false,
+  androidFix: true,
 });
