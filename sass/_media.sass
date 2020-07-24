@@ -9,6 +9,11 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(3, 300px)
+      grid-template-rows: repeat(2, 500px)
+      gap: 30px
 @media (max-width: 992px)
   .container
     max-width: 730px
@@ -28,6 +33,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 55px
     &-grid
       flex-direction: column
       &__info
@@ -41,6 +47,23 @@
       margin-bottom: 30px
       &__item
         height: 400px
+  .packages
+    &__title
+      margin-bottom: 50px
+    &-wrapper
+      grid-template-columns: repeat(2, 335px)
+      grid-template-rows: repeat(3, 500px)
+      gap: 30px
+    &-card
+      &__descr
+        &--detailed
+          padding: 35px 21px 25px 32px
+      &__title
+        &--detailed
+          margin: 0 0 22px
+          line-height: 18px
+      &__text
+        margin: 0 0 29px
   .newsletter
     padding: 88px 0 77px
     &-wrapper
@@ -112,6 +135,16 @@
     &-slider
       &__item
         height: 350px
+  .packages
+    padding: 30px 0 55px
+    &__title
+      margin-bottom: 40px
+      font-size: 32px
+      line-height: 40px
+    &-wrapper
+      grid-template-columns: repeat(2, minmax(250px, max-content))
+      grid-template-rows: repeat(3, 500px)
+      gap: 10px
   .newsletter
     padding: 66px 0 77px
     &-wrapper
@@ -148,7 +181,7 @@
     height: 210px
 @media (max-width: 576px)
   .container
-    max-width: 310px
+    max-width: 90%
   .logo
     width: 99px
   .hotel
@@ -167,6 +200,27 @@
       margin-bottom: 20px
       &__item
         height: 200px
+  .packages
+    &-wrapper
+      display: grid
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(4, 500px)
+      gap: 30px
+    &-card
+      &--detailed
+        display: none
+  .card
+    &-booking
+      &__ex-price
+        font-size: 12px
+        line-height: 16px
+      &-price
+        font-size: 20px
+        line-height: 26px
+      &__button
+        padding: 10px 23px 10px 22px
+        font-size: 12px
+        line-height: 17px
   .newsletter
     &-wrapper
       max-width: 310px
