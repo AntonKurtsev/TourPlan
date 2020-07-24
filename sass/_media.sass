@@ -204,11 +204,26 @@
     &-wrapper
       display: grid
       grid-template-columns: 1fr
-      grid-template-rows: repeat(4, 500px)
+      grid-template-rows: repeat(5, 500px)
       grid-gap: 10px
     &-card
       &--detailed
-        display: none
+        grid-template: repeat(2, 50%) / 1fr
+        grid-column: 1 / 2
+      &__stars
+        &--detailed
+          display: none
+      &__text
+        &--detailed
+          display: none
+      &__offer
+        &--detailed
+          min-width: 60px
+          max-width: 100px
+          padding: 4px 9px
+          font-weight: 600
+          font-size: 8px
+          line-height: 10px
   .card
     &-booking
       &__ex-price

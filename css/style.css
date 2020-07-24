@@ -651,9 +651,12 @@ template {
           justify-content: space-between;
 }
 
+.hotel__slider {
+  margin-left: 0;
+}
+
 .hotel-slider {
   width: 728px;
-  margin-left: 0;
 }
 
 .hotel-slider__button {
@@ -1722,12 +1725,31 @@ template {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (500px)[4];
-        grid-template-rows: repeat(4, 500px);
+    -ms-grid-rows: (500px)[5];
+        grid-template-rows: repeat(5, 500px);
     grid-gap: 10px;
   }
   .packages-card--detailed {
+    -ms-grid-rows: (50%)[2];
+    -ms-grid-columns: 1fr;
+        grid-template: repeat(2, 50%)/1fr;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  .packages-card__stars--detailed {
     display: none;
+  }
+  .packages-card__text--detailed {
+    display: none;
+  }
+  .packages-card__offer--detailed {
+    min-width: 60px;
+    max-width: 100px;
+    padding: 4px 9px;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
   }
   .card-booking__ex-price {
     font-size: 12px;
