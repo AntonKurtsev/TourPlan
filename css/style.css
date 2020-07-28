@@ -2194,6 +2194,17 @@ template {
   .footer__button {
     min-width: 100px;
     width: 50%;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .footer__required {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-bottom: 15px;
   }
   .footer-bottom__wrapper {
     margin-top: 30px;
