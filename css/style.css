@@ -1540,6 +1540,12 @@ template {
 .footer__link {
   text-decoration: none;
   color: inherit;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #ffffff;
 }
 
 .footer__text {
@@ -1661,6 +1667,12 @@ template {
 .footer-bottom__link {
   text-decoration: none;
   color: inherit;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom__link:hover {
+  color: #BDBDBD;
 }
 
 @media (max-width: 1200px) {
