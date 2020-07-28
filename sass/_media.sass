@@ -14,6 +14,12 @@
       grid-template-columns: repeat(3, 300px)
       grid-template-rows: repeat(2, 500px)
       grid-gap: 30px
+  .footer
+    &__input
+      flex-basis: 100%
+    &-bottom
+      &__wrapper
+        max-width: 616px
 @media (max-width: 992px)
   .container
     max-width: 730px
@@ -90,6 +96,34 @@
     height: 255px
     &:nth-child(1), &:nth-child(2)
       margin-bottom: 20px
+  .footer
+    padding: 73px 0 33px
+    &-wrapper
+      grid-template-columns: 30% 40% 30%
+      grid-row-gap: 40px
+    &__logo
+      grid-row: 1 / 2
+      width: 104px
+    &__social
+      &-networks
+        grid-row: 1 / 2
+        grid-column: span 2
+    &__categories
+      grid-row: 2 / 3
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 2
+      &-form
+        grid-row: 4
+        grid-column: span 2
+    &__input
+      flex-basis: 47.3%
+    &-bottom
+      &__wrapper
+        margin-top: 56px
+        margin-left: 0
+        max-width: 100%
 @media (max-width: 768px)
   .container
     max-width: 606px
@@ -179,6 +213,25 @@
   .card
     width: 48%
     height: 210px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+    &__logo
+      grid-column: 1 / 3
+    &__social
+      &-networks
+        grid-column: 3 / 7
+    &__categories
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__legal
+      grid-column:  span 2
+    &__contact
+      &-details
+        grid-column: span 5
+      &-form
+        grid-column: span 5
 @media (max-width: 576px)
   .container
     max-width: 90%
@@ -262,4 +315,45 @@
     height: 255px
     &:nth-child(3)
       margin-bottom: 20px
+  .footer
+    padding: 69px 0 21px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-networks
+        grid-row: 2
+        grid-column: 1
+    &__categories
+      grid-row: 3
+      grid-column: 1
+    &__additional
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__input
+      flex-basis: 100%
+    &__button
+      min-width: 100px
+      width: 50%
+    &-bottom
+      &__wrapper
+        margin-top: 30px
+        flex-wrap: wrap
+        align-items: flex-start
+      &__text
+        flex-basis: 100%
+        margin-bottom: 10px
       
