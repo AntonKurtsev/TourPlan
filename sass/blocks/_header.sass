@@ -18,6 +18,10 @@
     justify-content: space-between
     align-items: center
     color: $light
+    &__item
+      &--mobile
+        &--visible
+          display: none
     &__link
       color: inherit
       text-decoration: none
@@ -66,7 +70,7 @@
     background-position: center
     background-size: cover
   &__name
-    padding-left: 18px
+    margin-left: 18px
     font-size: 14px
     line-height: 18px
     color: $text-color

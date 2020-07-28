@@ -76,3 +76,10 @@ $('.newsletter').parallax({
   speed: 0.6,
   androidFix: true,
 });
+
+var menuButton = document.querySelector('.navbar-top__menu-btn')
+menuButton.addEventListener('click', function(){
+  console.log ('Клик по кнопке');
+  document.querySelector('.navbar-bottom')
+  .classList.toggle('navbar-bottom--visible');
+}) 
