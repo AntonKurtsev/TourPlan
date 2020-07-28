@@ -2053,6 +2053,12 @@ template {
   .hotel-slider__item {
     height: 200px;
   }
+  .hotel-slider__button--prev {
+    left: 0;
+  }
+  .hotel-slider__button--next {
+    right: 0;
+  }
   .packages-wrapper {
     display: -ms-grid;
     display: grid;
