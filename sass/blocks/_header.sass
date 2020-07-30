@@ -19,6 +19,10 @@
     align-items: center
     color: $light
     &__item
+      border-bottom: 1px solid transparent
+      transition: all 0.3s ease
+      &:hover
+        border-bottom: 1px solid $light
       &--mobile
         &--visible
           display: none

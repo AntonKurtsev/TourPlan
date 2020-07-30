@@ -405,6 +405,16 @@ template {
   color: #ffffff;
 }
 
+.navbar-menu__item {
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar-menu__item:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
 .navbar-menu__item--mobile--visible {
   display: none;
 }
@@ -2089,7 +2099,8 @@ template {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 90%;
+    max-width: 95%;
+    padding: 0;
   }
   .logo {
     width: 99px;
