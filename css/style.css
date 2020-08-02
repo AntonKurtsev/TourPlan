@@ -1708,8 +1708,8 @@ template {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .modal__overlay--visible {
@@ -1732,8 +1732,8 @@ template {
   z-index: 101;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .modal__dialog--visible {
@@ -1959,6 +1959,10 @@ template {
     margin-left: 0;
     max-width: 100%;
   }
+  .modal__dialog {
+    padding: 25px 70px;
+    width: 55%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2183,6 +2187,10 @@ template {
   .footer__contact-form {
     grid-column: span 5;
   }
+  .modal__dialog {
+    padding: 20px 50px;
+    width: 75%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2383,5 +2391,24 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 10px;
+  }
+  .modal__dialog {
+    padding: 20px 15px;
+  }
+  .modal__message {
+    margin-bottom: 5px;
+  }
+  .modal__required {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+    margin-bottom: 10px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
   }
 }
