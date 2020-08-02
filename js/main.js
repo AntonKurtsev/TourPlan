@@ -71,22 +71,24 @@ $(document).ready(function () {
     myMap.geoObjects
       .add(myGeoObject);
   }
-  
+// Paralax
   $('.newsletter').parallax({
     imageSrc: 'img/newsletter-bg.jpg',
     speed: 0.6,
     androidFix: true,
   });
-  
+//Menu button
   var menuButton = $('.navbar-top__menu-btn')
   menuButton.on('click', function(){
     $('.navbar-bottom').toggleClass('navbar-bottom--visible');
   }) 
 
+
+// Modals
   var modalButton = $('[data-toggle=modal]');
   var closeModalButton = $('.modal__close');
   var modalOverlayClose = $('.modal__overlay');
-  
+
   modalButton.on('click', openModal);
   closeModalButton.on('click', closeModal);
   modalOverlayClose.on('click', closeModal);
@@ -99,7 +101,8 @@ $(document).ready(function () {
     modalDialog.addClass('modal__dialog--visible');
   }
 
-  function closeModal() {
+  function closeModal(event) {
+    event.preventDefault();
     var modalOverlay = $('.modal__overlay');
     var modalDialog = $('.modal__dialog');
     modalOverlay.removeClass('modal__overlay--visible');
