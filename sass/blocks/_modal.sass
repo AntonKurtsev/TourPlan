@@ -1,5 +1,8 @@
 .modal
   &__overlay
+    &--visible
+      visibility: visible
+      opacity: 1
     position: fixed
     top: 0
     left: 0
@@ -7,7 +10,13 @@
     bottom: 0
     background-color: rgba(0, 143, 223, 0.39)
     z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.3s ease
   &__dialog
+    &--visible
+      visibility: visible
+      opacity: 1
     position: fixed
     top: 50%
     left: 50%
@@ -19,6 +28,9 @@
     color: $light
     border-radius: 8px
     z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.3s ease
   &__close
     position: absolute
     top: 17px
