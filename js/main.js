@@ -101,6 +101,8 @@ $(document).ready(function () {
     modalDialog.addClass('modal__dialog--visible');
   }
 
+  $("body").keyup('escape', closeModal);
+
   function closeModal(event) {
     event.preventDefault();
     var modalOverlay = $('.modal__overlay');
