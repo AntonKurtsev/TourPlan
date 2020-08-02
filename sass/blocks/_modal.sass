@@ -1,0 +1,45 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 478px
+    min-height: 487px
+    padding: 33px 88px
+    transform: translate(-50%, -50%)
+    background-color: $dark
+    color: $light
+    border-radius: 8px
+    z-index: 101
+  &__close
+    position: absolute
+    top: 17px
+    right: 18px
+  &__title
+    text-align: center
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    margin: 0 0 15px 0
+  &__input
+    flex-basis: 100%
+    margin-bottom: 15px
+  &__message
+    flex-basis: 100%
+    margin-bottom: 15px
+    height: 123px
+  &__required
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0

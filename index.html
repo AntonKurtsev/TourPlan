@@ -612,7 +612,7 @@
 
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
+          <form action="send.php" method="POST" class="form footer__form">
             <input 
               type="text" 
               class="input footer__input" 
@@ -656,6 +656,46 @@
     </div>
     <!-- /.container -->
   </footer>
+
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close-icon.svg" alt="icon: close" class="close-icon">
+      </a>
+      <h4 class="modal__title">Booking</h4>
+      <form action="#" class="form modal__form">
+        <input 
+          type="text" 
+          class="input modal__input" 
+          placeholder="Your Full Name*"
+          name="name"
+        />
+        <input 
+          type="text" 
+          class="input modal__input" 
+          placeholder="Phone Number*"
+          name="phone"
+        />
+        <input 
+          type="text" 
+          class="input modal__input" 
+          placeholder="Email*"
+          name="email"
+        />
+        <textarea 
+          class="message modal__message" 
+          placeholder="Message"
+          name="message"
+        ></textarea>
+        <button class="button modal__button" type="submit">Send</button>
+        <span class="modal__required">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
   
   <script src="js/swiper-bundle.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=9064086e-e919-43ec-966b-7b10a27ed28b&lang=ru_RU">
