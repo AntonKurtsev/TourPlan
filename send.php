@@ -9,7 +9,7 @@ if (($name = $_POST['name']) && ($phone = $_POST['phone']) && ($message = $_POST
   # code...// Формирование самого письма
     $title = "Новое обращение Best Tour Plan";
     $body = "
-    <h2>Новое письмо</h2>
+    <h2>Новое обращение</h2>
     <b>Имя:</b> $name<br>
     <b>Телефон:</b> $phone<br><br>
     <b>Сообщение:</b><br>$message
@@ -97,4 +97,51 @@ try {
 
     // Отображение результата
     header('location: thankyouforsubscribe.html');
+} elseif (($name = $_POST['modal-name']) && ($phone = $_POST['modal-phone']) && ($email = $_POST['modal-email']) && ($message = $_POST['modal-message'])) {
+    $title = "Запрос на бронирование от Best Tour Plan";
+    $body = "
+    <h2>Новый запрос</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br>
+    <b>E-mail:</b> $email<br>
+    <b>Сообщение:</b><br>$message
+    ";
+  
+  // Настройки PHPMailer
+  $mailSubscribe = new PHPMailer\PHPMailer\PHPMailer();
+  try {
+      $mailSubscribe->isSMTP();   
+      $mailSubscribe->CharSet = "UTF-8";
+      $mailSubscribe->SMTPAuth   = true;
+      //$mail->SMTPDebug = 2;
+      $mailSubscribe->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
+  
+      // Настройки вашей почты
+      $mailSubscribe->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+      $mailSubscribe->Username   = 'besttourplandrk@gmail.com'; // Логин на почте
+      $mailSubscribe->Password   = '9`]q]H?N'; // Пароль на почте
+      $mailSubscribe->SMTPSecure = 'ssl';
+      $mailSubscribe->Port       = 465;
+      $mailSubscribe->setFrom('besttourplandrk@gmail.com', 'Best Tour Plan'); // Адрес самой почты и имя отправителя
+  
+      // Получатель письма
+      $mailSubscribe->addAddress('kucrev@gmail.com');  
+  
+  
+      // Отправка сообщения
+      $mailSubscribe->isHTML(true);
+      $mailSubscribe->Subject = $title;
+      $mailSubscribe->Body = $body;    
+  
+      // Проверяем отравленность сообщения
+      if ($mailSubscribe->send()) {$result = "success";} 
+      else {$result = "error";}
+  
+      } catch (Exception $e) {
+          $result = "error";
+          $status = "Сообщение не было отправлено. Причина ошибки: {$mailSubscribe->ErrorInfo}";
+      }
+  
+      // Отображение результата
+      header('location: thankyouforbooking.html');
 }

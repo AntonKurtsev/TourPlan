@@ -13,7 +13,7 @@
     <div class="container">
       <div class="navbar-top">
 
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="img/Horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
 
@@ -665,29 +665,29 @@
         <img src="img/close-icon.svg" alt="icon: close" class="close-icon">
       </a>
       <h4 class="modal__title">Booking</h4>
-      <form action="#" class="form modal__form">
+      <form action="send.php" method="POST" class="form modal__form">
         <input 
           type="text" 
           class="input modal__input" 
           placeholder="Your Full Name*"
-          name="name"
+          name="modal-name"
         />
         <input 
           type="text" 
           class="input modal__input" 
           placeholder="Phone Number*"
-          name="phone"
+          name="modal-phone"
         />
         <input 
           type="text" 
           class="input modal__input" 
           placeholder="Email*"
-          name="email"
+          name="modal-email"
         />
         <textarea 
           class="message modal__message" 
           placeholder="Message"
-          name="message"
+          name="modal-message"
         ></textarea>
         <button class="button modal__button" type="submit">Send</button>
         <span class="modal__required">* Required Fields</span>
