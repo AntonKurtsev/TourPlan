@@ -101,7 +101,11 @@ $(document).ready(function () {
     modalDialog.addClass('modal__dialog--visible');
   }
 
-  $("body").keyup('escape', closeModal);
+  $(document).keyup(function(event) { 
+    if (event.keyCode == 27) { 
+      closeModal(event);
+    }
+  });
 
   function closeModal(event) {
     event.preventDefault();
