@@ -151,8 +151,8 @@ $(document).ready(function () {
           minlength: jQuery.validator.format("At least 10 figures required!"),
         }
       }
-    })
-  })
+    });
+  });
  
   // AOS animation
   AOS.init();
