@@ -166,5 +166,15 @@ $(document).ready(function () {
       }
     })
   })
+  // Mask input
+  $('.phone').mask('+7(999)999-99-99', {
+    translation: {
+      '9': {
+        pattern: /[0-9]/,
+        optional: true,
+      },
+    },
+    placeholder: '+7(999)999-99-99',
+  });
 });
 
