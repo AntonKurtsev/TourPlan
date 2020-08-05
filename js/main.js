@@ -176,6 +176,7 @@ $(document).ready(function () {
     },
     placeholder: '+7(999)999-99-99',
   });
+  // AOS animation
   AOS.init();
 });
 
