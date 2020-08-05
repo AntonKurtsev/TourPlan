@@ -84,6 +84,16 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+   // Mask input
+   $('.phone').mask('+7(999)999-99-99', {
+    translation: {
+      '9': {
+        pattern: /[0-9]/,
+        optional: true,
+      },
+    },
+    placeholder: '+7(999)999-99-99',
+  });
 
   // Обработка формы
   $('.form').each(function(){
@@ -96,18 +106,23 @@ $(document).ready(function () {
         },
         modal__name: {
           required: true,
-          minlength: 2
+          minlength: 2,
         },
         email: {
           required: true,
-          email: true
+          email: true,
         },
         modal__email: {
           required: true,
-          email: true
+          email: true,
         },
         phone: {
-          required: true
+          required: true,
+          minlength: 16,
+        },
+        modal__phone: {
+          required: true,
+          minlength: 16,
         }
       },
       messages: {
@@ -129,23 +144,16 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please specify phone number",
+          minlength: jQuery.validator.format("At least 10 figures required!"),
         },
         modal__phone: {
           required: "Please specify phone number",
+          minlength: jQuery.validator.format("At least 10 figures required!"),
         }
       }
     })
   })
-  // Mask input
-  $('.phone').mask('+7(999)999-99-99', {
-    translation: {
-      '9': {
-        pattern: /[0-9]/,
-        optional: true,
-      },
-    },
-    placeholder: '+7(999)999-99-99',
-  });
+ 
   // AOS animation
   AOS.init();
 });
