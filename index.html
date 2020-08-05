@@ -6,6 +6,7 @@
   <title>Best Tour Plan - Hotel Booking</title>
   <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
@@ -200,7 +201,6 @@
           <!-- /.hotel-grid__info -->
         </div>
         <!-- /.hotel-grid -->
-        
       </div>
       <!-- /.container -->
     </section>
@@ -209,7 +209,7 @@
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages-wrapper">
-          <div class="packages-card packages-card--detailed">
+          <div data-aos="fade-right" data-aos-duration="800" class="packages-card packages-card--detailed">
             <img src="img/packages-img-1.jpg" alt="Hotel Blue Haven" class="packages-card__image packages-card__image--detailed">
             <span class="packages-card__offer packages-card__offer--detailed">Flash Offer</span>
             <div class="packages-card__descr packages-card__descr--detailed">
@@ -241,7 +241,7 @@
             <!-- /.packages-card__descr -->
           </div>
           <!-- /.packages-card -->
-          <div class="packages-card">
+          <div data-aos="fade-left" data-aos-duration="800" class="packages-card">
             <img src="img/packages-img-2.jpg" alt="LUX* Belle Mare" class="packages-card__image">
             <span class="packages-card__offer">Flash Offer</span>
             <div class="packages-card__descr">
@@ -273,7 +273,7 @@
             <!-- /.packages-card__descr -->
           </div>
           <!-- /.packages-card -->
-          <div class="packages-card">
+          <div data-aos="fade-right" data-aos-duration="800" class="packages-card">
             <img src="img/packages-img-3.jpg" alt="White Palace" class="packages-card__image">
             <span class="packages-card__offer">Flash Offer</span>
             <div class="packages-card__descr">
@@ -305,7 +305,7 @@
             <!-- /.packages-card__descr -->
           </div>
           <!-- /.packages-card -->
-          <div class="packages-card">
+          <div data-aos="fade-up" data-aos-duration="800" class="packages-card">
             <img src="img/packages-img-4.jpg" alt="Luxury Place" class="packages-card__image">
             <span class="packages-card__offer">Flash Offer</span>
             <div class="packages-card__descr">
@@ -337,7 +337,7 @@
             <!-- /.packages-card__descr -->
           </div>
           <!-- /.packages-card -->
-          <div class="packages-card">
+          <div data-aos="fade-left" data-aos-duration="800" class="packages-card">
             <img src="img/packages-img-5.jpg" alt="Hotel Five Star" class="packages-card__image">
             <span class="packages-card__offer">Flash Offer</span>
             <div class="packages-card__descr">
@@ -398,7 +398,7 @@
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__title">What people thinks about us</h2>
-        <div class="swiper-container reviews-slider">
+        <div data-aos="flip-down" data-aos-duration="1700" class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="reviews-slider__item">
@@ -483,7 +483,7 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card">
+          <div data-aos="zoom-in" data-aos-duration="600" class="card">
             <img src="img/activities-img-1.jpg" alt="The curious corner 
             of chamarel" class="card__image">
             <h3 class="card__title">The curious corner 
@@ -491,7 +491,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div data-aos="zoom-in" data-aos-duration="800" class="card">
             <img src="img/activities-img-2.jpg" alt="Gymkhana club golf
             course" class="card__image">
             <h3 class="card__title">Gymkhana club golf
@@ -499,7 +499,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div data-aos="zoom-in" data-aos-duration="1000" class="card">
             <img src="img/activities-img-3.jpg" alt="Tamarind falls hiking
             trip - full day" class="card__image">
             <h3 class="card__title">Tamarind falls hiking
@@ -507,7 +507,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div data-aos="zoom-in" data-aos-duration="1200" class="card">
             <img src="img/activities-img-4.jpg" alt="The blue marine discovery
             quest" class="card__image">
             <h3 class="card__title">The blue marine discovery
@@ -720,6 +720,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
