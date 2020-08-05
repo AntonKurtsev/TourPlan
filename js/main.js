@@ -65,10 +65,9 @@ $(document).ready(function () {
 
 
   function openModal() {
-    var modalOverlay = $('.modal__overlay');
-    var modalDialog = $('.modal__dialog');
-    modalOverlay.addClass('modal__overlay--visible');
-    modalDialog.addClass('modal__dialog--visible');
+    var targetModal = $(this).attr('data-href');
+    $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible');
+    $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible');
   }
 
   $(document).keyup(function(event) { 
@@ -104,7 +103,11 @@ $(document).ready(function () {
           required: true,
           minlength: 2
         },
-        modal__name: {
+        feedback__name: {
+          required: true,
+          minlength: 2,
+        },
+        booking__name: {
           required: true,
           minlength: 2,
         },
@@ -112,7 +115,11 @@ $(document).ready(function () {
           required: true,
           email: true,
         },
-        modal__email: {
+        feedback__email: {
+          required: true,
+          email: true,
+        },
+        booking__email: {
           required: true,
           email: true,
         },
@@ -120,33 +127,51 @@ $(document).ready(function () {
           required: true,
           minlength: 16,
         },
-        modal__phone: {
+        feedback__phone: {
           required: true,
           minlength: 16,
-        }
+        },
+        bookig__phone: {
+          required: true,
+          minlength: 16,
+        },
       },
       messages: {
         name: {
           required: "Please specify your name",
           minlength: jQuery.validator.format("At least 2 characters required!"),
         },
-        modal__name: {
+        feedback__name: {
           required: "Please specify your name",
           minlength: jQuery.validator.format("At least 2 characters required!"),
         },
+        booking__name: {
+          required: "Please specify your name",
+          minlength: jQuery.validator.format("At least 2 characters required!"),
+        },
+
         email: {
           required: "Please specify your email address",
           email: "Your email address must be in the format of name@domain.com"
         },
-        modal__email: {
+        feedback__email: {
           required: "Please specify your email address",
           email: "Your email address must be in the format of name@domain.com"
         },
+        booking__email: {
+          required: "Please specify your email address",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+
         phone: {
           required: "Please specify phone number",
           minlength: jQuery.validator.format("At least 10 figures required!"),
         },
-        modal__phone: {
+        feedback__phone: {
+          required: "Please specify phone number",
+          minlength: jQuery.validator.format("At least 10 figures required!"),
+        },
+        booking__phone: {
           required: "Please specify phone number",
           minlength: jQuery.validator.format("At least 10 figures required!"),
         }

@@ -205,7 +205,7 @@
                 <!-- /.call-center__phone -->
               </div>
               <!-- /.call-center -->
-              <button data-toggle="modal" class="booking__button">View Other Options</button>
+              <button data-toggle="modal" data-href="#feedback-modal" class="booking__button">View Other Options</button>
             </div>
             <!-- /.hotel-grid__booking -->
             <div class="map hotel-grid__map" id="map">
@@ -504,7 +504,7 @@
             of chamarel" class="card__image">
             <h3 class="card__title">The curious corner 
               of chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div data-aos="zoom-in" data-aos-duration="800" class="card">
@@ -512,7 +512,7 @@
             course" class="card__image">
             <h3 class="card__title">Gymkhana club golf
               course</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div data-aos="zoom-in" data-aos-duration="1000" class="card">
@@ -520,7 +520,7 @@
             trip - full day" class="card__image">
             <h3 class="card__title">Tamarind falls hiking
               trip - full day</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div data-aos="zoom-in" data-aos-duration="1200" class="card">
@@ -528,7 +528,7 @@
             quest" class="card__image">
             <h3 class="card__title">The blue marine discovery
               quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
         </div>
@@ -691,7 +691,7 @@
       <!-- /.container -->
     </footer>
 
-    <div class="modal">
+    <div class="modal" id="feedback-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
@@ -704,27 +704,70 @@
             type="text" 
             class="input modal__input" 
             placeholder="Your Full Name*"
-            name="modal__name"
+            name="feedback__name"
             required
           />
           <input 
             type="tel" 
             class="input modal__input phone" 
             placeholder="Phone Number*"
-            name="modal__phone"
+            name="feedback__phone"
             required
           />
           <input 
             type="email" 
             class="input modal__input" 
             placeholder="Email*"
-            name="modal__email"
+            name="feedback__email"
             required
           />
           <textarea 
             class="message modal__message" 
             placeholder="Message"
-            name="modal__message"
+            name="feedback__message"
+          ></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__required">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal" id="booking-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close-icon.svg" alt="icon: close" class="close-icon">
+        </a>
+        <h4 class="modal__title">book your activity</h4>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input 
+            type="text" 
+            class="input modal__input" 
+            placeholder="Your Full Name*"
+            name="booking__name"
+            required
+          />
+          <input 
+            type="tel" 
+            class="input modal__input phone" 
+            placeholder="Phone Number*"
+            name="booking__phone"
+            required
+          />
+          <input 
+            type="email" 
+            class="input modal__input" 
+            placeholder="Email*"
+            name="booking__email"
+            required
+          />
+          <textarea 
+            class="message modal__message" 
+            placeholder="Message"
+            name="booking__message"
           ></textarea>
           <button class="button modal__button" type="submit">Send</button>
           <span class="modal__required">* Required Fields</span>
