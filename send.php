@@ -97,7 +97,7 @@ try {
 
     // Отображение результата
     header('location: thankyouforsubscribe.html');
-} elseif (($name = $_POST['modal-name']) && ($phone = $_POST['modal-phone']) && ($email = $_POST['modal-email']) && ($message = $_POST['modal-message'])) {
+} elseif (($name = $_POST['modal__name']) && ($phone = $_POST['modal__phone']) && ($email = $_POST['modal__email']) && ($message = $_POST['modal__message'])) {
     $title = "Запрос на бронирование от Best Tour Plan";
     $body = "
     <h2>Новый запрос</h2>

@@ -114,5 +114,57 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+
+  // Обработка формы
+  $('.form').each(function(){
+    $(this).validate({
+      errorClass: "invalid",
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        modal__name: {
+          required: true,
+          minlength: 2
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        modal__email: {
+          required: true,
+          email: true
+        },
+        phone: {
+          required: true
+        }
+      },
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: jQuery.validator.format("At least 2 characters required!"),
+        },
+        modal__name: {
+          required: "Please specify your name",
+          minlength: jQuery.validator.format("At least 2 characters required!"),
+        },
+        email: {
+          required: "Please specify your email address",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        modal__email: {
+          required: "Please specify your email address",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "Please specify phone number",
+        },
+        modal__phone: {
+          required: "Please specify phone number",
+        }
+      }
+    })
+  })
 });
 
