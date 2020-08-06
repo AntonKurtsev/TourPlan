@@ -91,7 +91,6 @@ $(document).ready(function () {
         optional: true,
       },
     },
-    placeholder: '+7(999)999-99-99',
   });
 
   // Обработка формы
