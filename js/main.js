@@ -131,7 +131,7 @@ $(document).ready(function () {
           required: true,
           minlength: 16,
         },
-        bookig__phone: {
+        booking__phone: {
           required: true,
           minlength: 16,
         },

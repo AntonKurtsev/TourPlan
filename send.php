@@ -69,7 +69,7 @@ elseif (($name = $_POST['booking__name']) && ($phone = $_POST['booking__phone'])
       $mailSubscribe->setFrom('besttourplandrk@gmail.com', 'Best Tour Plan'); // Адрес самой почты и имя отправителя
   
       // Получатель письма
-      $mailSubscribe->addAddress('kucrev@gmail.com');  
+      $mailSubscribe->addAddress('goncharovnikita713@gmail.com');  
   
   
       // Отправка сообщения
