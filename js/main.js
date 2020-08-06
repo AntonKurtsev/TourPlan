@@ -102,10 +102,6 @@ $(document).ready(function () {
           required: true,
           minlength: 2
         },
-        feedback__name: {
-          required: true,
-          minlength: 2,
-        },
         booking__name: {
           required: true,
           minlength: 2,
@@ -114,19 +110,11 @@ $(document).ready(function () {
           required: true,
           email: true,
         },
-        feedback__email: {
-          required: true,
-          email: true,
-        },
         booking__email: {
           required: true,
           email: true,
         },
         phone: {
-          required: true,
-          minlength: 16,
-        },
-        feedback__phone: {
           required: true,
           minlength: 16,
         },
@@ -140,10 +128,6 @@ $(document).ready(function () {
           required: "Please specify your name",
           minlength: jQuery.validator.format("At least 2 characters required!"),
         },
-        feedback__name: {
-          required: "Please specify your name",
-          minlength: jQuery.validator.format("At least 2 characters required!"),
-        },
         booking__name: {
           required: "Please specify your name",
           minlength: jQuery.validator.format("At least 2 characters required!"),
@@ -153,20 +137,12 @@ $(document).ready(function () {
           required: "Please specify your email address",
           email: "Your email address must be in the format of name@domain.com"
         },
-        feedback__email: {
-          required: "Please specify your email address",
-          email: "Your email address must be in the format of name@domain.com"
-        },
         booking__email: {
           required: "Please specify your email address",
           email: "Your email address must be in the format of name@domain.com"
         },
 
         phone: {
-          required: "Please specify phone number",
-          minlength: jQuery.validator.format("At least 10 figures required!"),
-        },
-        feedback__phone: {
           required: "Please specify phone number",
           minlength: jQuery.validator.format("At least 10 figures required!"),
         },

@@ -26,18 +26,18 @@ elseif ($email = $_POST['email']) {
 
     header('location: thankyouforsubscribe.html');
 }
-elseif (($name = $_POST['feedback__name']) && ($phone = $_POST['feedback__phone']) && ($email = $_POST['feedback__email']) && ($message = $_POST['feedback__message'])) {
-    $title = "Отзыв от попользователя Best Tour Plan";
-    $body = "
-    <h2>Новый отзыв</h2>
-    <b>Имя:</b> $name<br>
-    <b>Телефон:</b> $phone<br>
-    <b>E-mail:</b> $email<br>
-    <b>Сообщение:</b><br>$message
-    ";
-    // Отображение результата
-    header('location: thankyouforfeedback.html');
-    }
+// elseif (($name = $_POST['feedback__name']) && ($phone = $_POST['feedback__phone']) && ($email = $_POST['feedback__email']) && ($message = $_POST['feedback__message'])) {
+//     $title = "Отзыв от попользователя Best Tour Plan";
+//     $body = "
+//     <h2>Новый отзыв</h2>
+//     <b>Имя:</b> $name<br>
+//     <b>Телефон:</b> $phone<br>
+//     <b>E-mail:</b> $email<br>
+//     <b>Сообщение:</b><br>$message
+//     ";
+//     // Отображение результата
+//     header('location: thankyouforfeedback.html');
+//     }
 elseif (($name = $_POST['booking__name']) && ($phone = $_POST['booking__phone']) && ($email = $_POST['booking__email']) && ($message = $_POST['booking__message'])) {
     $title = "Бронирование от Best Tour Plan";
     $body = "
