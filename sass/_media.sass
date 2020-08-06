@@ -177,6 +177,8 @@
       padding-top: 31px
       &__item
         margin-bottom: 20px
+        &:hover
+          border-bottom: 1px solid transparent
         &:first-child
           margin-bottom: 27px
         &:nth-child(2)
@@ -282,6 +284,13 @@
         grid-column: span 6
       &-form
         grid-column: span 5
+    &__link
+      &:hover
+        color: inherit
+    &-bottom
+      &__link
+        &:hover
+          color: inherit
     &__input
       &-group
         flex-basis: 49%
