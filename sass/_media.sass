@@ -164,6 +164,8 @@
       left: 0
       right: 0
       bottom: 0
+      height: 100vh
+      overflow-y: scroll
       &--visible
         display: flex
         flex-direction: column
@@ -438,5 +440,11 @@
       margin-bottom: 10px
     &__button
       order: 7
+@media ( max-height: 500px)
+  .modal
+    &__dialog
+      height: 100vh
+      overflow-y: scroll
+  
 
       
