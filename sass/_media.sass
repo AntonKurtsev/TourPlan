@@ -396,8 +396,17 @@
     &__logo
       grid-row: 1
       grid-column: 1
+    &__title
+      &--inline
+        margin-bottom: 22px
+        flex-basis: 100%
     &__social
+      &-icons
+        margin: 0
       &-networks
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
         grid-row: 2
         grid-column: 1
     &__categories
@@ -409,6 +418,9 @@
     &__legal
       grid-row: 5
       grid-column: 1
+    &__icon
+      &-wrapper
+        min-width: 30px
     &__contact
       &-details
         grid-row: 6
