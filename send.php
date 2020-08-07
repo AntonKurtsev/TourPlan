@@ -5,7 +5,7 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-if (($name = $_POST['name']) && ($phone = $_POST['phone']) && ($message = $_POST['message'])) {
+if (($name = $_POST['name']) && ($phone = $_POST['phone'])) {
   # code...// Формирование самого письма
     $title = "Новое обращение Best Tour Plan";
     $body = "
@@ -15,7 +15,7 @@ if (($name = $_POST['name']) && ($phone = $_POST['phone']) && ($message = $_POST
     <b>Сообщение:</b><br>$message
     ";
 // Отображение результата
-header('location: thankyou.html');
+$header = 'location: thankyou.html';
 } 
 elseif ($email = $_POST['email']) {
   $title = "Подписка на рассылку от Best Tour Plan";
@@ -24,8 +24,9 @@ elseif ($email = $_POST['email']) {
   <b>E-mail:</b> $email
   ";
 
-    header('location: thankyouforsubscribe.html');
-} elseif (($name = $_POST['booking__name']) && ($phone = $_POST['booking__phone']) && ($email = $_POST['booking__email']) && ($message = $_POST         ['booking__message'])) {
+  $header = 'location: thankyouforsubscribe.html';
+
+} elseif (($name = $_POST['booking__name']) && ($phone = $_POST['booking__phone']) && ($email = $_POST['booking__email'])) {
     $title = "Бронирование от Best Tour Plan";
     $body = "
     <h2>Новый запрос на бронирование</h2>
@@ -35,7 +36,7 @@ elseif ($email = $_POST['email']) {
     <b>Сообщение:</b><br>$message
     ";
     // Отображение результата
-    header('location: thankyouforbooking.html');
+    $header = 'location: thankyouforbooking.html';
 }
   
   // Настройки PHPMailer
@@ -65,7 +66,7 @@ elseif ($email = $_POST['email']) {
       $mail->Body = $body;    
   
       // Проверяем отравленность сообщения
-      if ($mail->send()) {$result = "success";} 
+      if ($mail->send()) {header($header);} 
       else {$result = "error";}
   
       } catch (Exception $e) {
